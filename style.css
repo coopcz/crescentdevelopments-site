@@ -1,80 +1,116 @@
-/* Base reset & typography */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Google Font override */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f5dc;  /* Cream */
-  color: #333;
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background: #F5F1E8;
+  color: #00284F;
+  margin: 0;
   line-height: 1.5;
-  padding: 0 1rem;
 }
 
-/* Header */
-header {
-  padding: 2.5rem 0 1rem;
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: #00284F;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  z-index: 10;
 }
-header h1 {
-  font-size: 2rem;
-  color: #003366;  /* Dark blue */
+.nav-logo {
+  color: #FFCB1D;
+  font-weight: 600;
+  text-decoration: none;
 }
-header .tagline {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #004d99;
+.nav-logo span { color: #F5F1E8; }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.nav-links a {
+  color: #F5F1E8;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 /* Hero */
 .hero {
-  margin: 2rem auto;
-  max-width: 500px;
+  text-align: center;
+  padding: 4rem 1rem;
 }
-.hero h2 {
-  font-size: 1.5rem;
-  color: #003366;
-  margin-bottom: 0.75rem;
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 .hero p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
-  color: #444;
 }
-
-/* Button */
 .btn {
   display: inline-block;
+  background: #FFCB1D;
+  color: #00284F;
   padding: 0.75rem 1.5rem;
-  background-color: #003366;
-  color: white;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.2s;
+  font-weight: 600;
+  transition: opacity 0.2s;
 }
-.btn:hover {
-  background-color: #002244;
+.btn:hover { opacity: 0.9; }
+
+/* Sections */
+.section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.section.alt {
+  background: white;
+}
+.section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.card h3 {
+  margin-top: 0;
+  color: #00284F;
+}
+.card.highlight {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.btn.small {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
 }
 
 /* Footer */
 footer {
-  margin: 3rem 0 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #00284F;
+  color: #F5F1E8;
   font-size: 0.9rem;
-  color: #555;
 }
 
 /* Responsive tweaks */
 @media (max-width: 480px) {
-  header h1 {
-    font-size: 1.75rem;
-  }
-  .hero h2 {
-    font-size: 1.25rem;
-  }
-  .btn {
-    width: 100%;
-    max-width: 300px;
-  }
+  .hero h1 { font-size: 1.5rem; }
+  .section h2 { font-size: 1.5rem; }
 }
