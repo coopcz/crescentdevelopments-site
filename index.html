@@ -4,22 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Crescent Developments LLC</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Crescent Developments LLC</h1>
-    <p class="tagline">Building quality software & apps</p>
+  <!-- 1. Sticky Navbar -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">Crescent<span>Dev</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- 2. Hero -->
+  <header class="hero">
+    <h1>Building quality software & apps</h1>
+    <p>Your partner in digital products</p>
+    <a href="https://latterstudy.com" class="btn">Visit Latter Study</a>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Your partner in digital products</h2>
-      <p>Coming soon: Latter Study app and more.</p>
-      <a href="https://latterstudy.com" class="btn">Visit Latter Study</a>
-    </section>
-  </main>
+  <!-- 3. About -->
+  <section id="about" class="section">
+    <h2>Who We Are</h2>
+    <p>At Crescent Developments, we craft clean, scalable web and mobile solutions tailored to your needs. Our team blends modern design with rock-solid engineering.</p>
+  </section>
 
+  <!-- 4. Services -->
+  <section id="services" class="section alt">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Web Applications</h3>
+        <p>Responsive, performant sites & SPAs.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Apps</h3>
+        <p>iOS & Android experiences users love.</p>
+      </div>
+      <div class="card">
+        <h3>UX/UI Design</h3>
+        <p>Intuitive interfaces & polished visuals.</p>
+      </div>
+      <div class="card">
+        <h3>Cloud Backends</h3>
+        <p>Secure, scalable server-side infrastructure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Our Work -->
+  <section id="work" class="section">
+    <h2>Our Work</h2>
+    <div class="card highlight">
+      <h3>Latter Study</h3>
+      <p>Gospel study simplified with AI & daily insights.</p>
+      <a href="https://latterstudy.com" class="btn small">View Project</a>
+    </div>
+  </section>
+
+  <!-- 6. Contact CTA -->
+  <section id="contact" class="section alt">
+    <h2>Let’s build something great</h2>
+    <a href="/contact.html" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Crescent Developments LLC</p>
   </footer>
