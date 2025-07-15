@@ -6,80 +6,132 @@
   <title>Crescent Developments LLC</title>
 
   <!-- site favicon -->
-  <link rel="icon" type="image/png" href="/favicon_512x512.png" sizes="512x512" />
+  <link rel="icon" type="image/png" href="/crescent.png" sizes="512x512" />
 
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Sticky Navbar -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <a href="#" class="nav-logo">Crescent<span>Dev</span></a>
+    <div class="nav-logo-wrap">
+      <img src="logo.png" alt="Crescent Developments Logo" class="nav-logo-img" />
+      <span class="nav-logo-text">Crescent Developments</span>
+    </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#pricing">Pricing</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero -->
   <header class="hero">
-    <h1>Building quality software &amp; apps</h1>
-    <p>Your partner in digital products</p>
-    <a href="https://latterstudy.com" class="btn">Visit Latter Study</a>
+    <h1>Building quality software & apps</h1>
+    <p>Modern mobile and web solutions, crafted with care.</p>
+    <a href="#contact" class="btn">Start a Project</a>
   </header>
 
   <!-- About -->
-  <section id="about" class="section">
-    <h2>Who We Are</h2>
-    <p>At Crescent Developments, we craft clean, scalable web and mobile solutions tailored to your needs. Our team blends modern design with rock-solid engineering.</p>
+  <section id="about" class="section" data-animate>
+    <h2>About</h2>
+    <p>Crescent Developments is a boutique software studio focused on clean, scalable, and beautiful digital products. We blend design and engineering to help you launch your next big idea.</p>
   </section>
 
-<!-- Services -->
-<section id="services" class="section alt">
-  <h2>Our Services</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Web Applications</h3>
-      <p>Responsive, performant sites &amp; SPAs.</p>
+  <!-- Services -->
+  <section id="services" class="section alt" data-animate>
+    <h2>Services</h2>
+    <div class="grid">
+      <div class="card" data-animate><h3>Mobile Apps</h3><p>iOS & Android development</p></div>
+      <div class="card" data-animate><h3>Web Apps</h3><p>Modern, responsive websites</p></div>
+      <div class="card" data-animate><h3>UI/UX Design</h3><p>Minimal, intuitive interfaces</p></div>
+      <div class="card" data-animate><h3>Cloud Backends</h3><p>Secure, scalable infrastructure</p></div>
     </div>
-    <div class="card">
-      <h3>Mobile Apps</h3>
-      <p>iOS &amp; Android experiences users love.</p>
-    </div>
-    <div class="card">
-      <h3>UX/UI Design</h3>
-      <p>Intuitive interfaces &amp; polished visuals.</p>
-    </div>
-    <div class="card">
-      <h3>Cloud Backends</h3>
-      <p>Secure, scalable server-side infrastructure.</p>
-    </div>
-    <div class="card">
-      <h3>Digital Marketing</h3>
-      <p>Targeted campaigns &amp; SEO to boost your visibility.</p>
-    </div>
-    <div class="card">
-      <h3>Data Analytics</h3>
-      <p>Actionable insights from your data to drive decisions.</p>
-    </div>
-  </div>
-</section>
+  </section>
 
-
-  <!-- Our Work -->
-  <section id="work" class="section">
-    <h2>Our Work</h2>
-    <div class="card highlight">
+  <!-- Work -->
+  <section id="work" class="section" data-animate>
+    <h2>Featured Work</h2>
+    <div class="card highlight" data-animate>
       <img src="/favicon_512x512.png" alt="Latter Study Logo" class="work-logo">
       <h3>Latter Study</h3>
-      <p>Gospel study simplified with AI &amp; daily insights.</p>
-      <a href="https://latterstudy.com" class="btn small">View Project</a>
+      <p>AI-powered gospel study for LDS members. Generate talks, lessons, and daily insights.</p>
+      <a href="https://latterstudy.com" class="btn small" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+    <!-- Add more project images/screenshots here in the future -->
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section alt" data-animate>
+    <h2>Simple, Transparent Pricing</h2>
+    <p class="section-subtitle">Choose the plan that fits your vision</p>
+    
+    <div class="pricing-container">
+      <!-- MVP Package -->
+      <div class="pricing-card mvp-card" data-animate>
+        <div class="pricing-header">
+          <div class="pricing-badge">Most Popular</div>
+          <h3>MVP Package</h3>
+          <p class="pricing-description">Get your idea to market fast</p>
+        </div>
+        
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="amount">2,000</span>
+          <span class="period">one-time</span>
+        </div>
+        
+        <div class="pricing-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span>2-4 weeks delivery</span>
+          </div>
+        </div>
+        
+        <ul class="pricing-features">
+          <li>✓ Custom MVP development</li>
+          <li>✓ Responsive design</li>
+          <li>✓ Core functionality</li>
+          <li>✓ Deployment ready</li>
+          <li>✓ 30-day support</li>
+        </ul>
+        
+        <a href="#contact" class="btn pricing-btn">Start Your MVP</a>
+      </div>
+      
+      <!-- Ongoing Support -->
+      <div class="pricing-card support-card" data-animate>
+        <div class="pricing-header">
+          <h3>Ongoing Support</h3>
+          <p class="pricing-description">Keep your product growing</p>
+        </div>
+        
+        <div class="pricing-price">
+          <span class="currency">$</span>
+          <span class="amount">500</span>
+          <span class="period">/month</span>
+        </div>
+        
+        <div class="pricing-note">
+          <span>+ $2,000 initial setup</span>
+        </div>
+        
+        <ul class="pricing-features">
+          <li>✓ Monthly updates & maintenance</li>
+          <li>✓ Bug fixes & improvements</li>
+          <li>✓ Feature additions</li>
+          <li>✓ Performance optimization</li>
+          <li>✓ Priority support</li>
+        </ul>
+        
+        <a href="#contact" class="btn pricing-btn secondary">Get Ongoing Support</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact CTA -->
-  <section id="contact" class="section alt">
+  <!-- Contact -->
+  <section id="contact" class="section alt" data-animate>
     <h2>Let’s build something great</h2>
     <a href="mailto:support@crescentdevelopments.org" class="btn">Contact Us</a>
   </section>
@@ -88,5 +140,54 @@
   <footer>
     <p>© 2025 Crescent Developments LLC</p>
   </footer>
+
+  <script>
+    // Animate sections and cards on scroll
+    function animateOnScroll() {
+      const observer = new window.IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      document.querySelectorAll('[data-animate]').forEach(el => {
+        observer.observe(el);
+      });
+    }
+    
+    // Enhanced pricing card animations
+    function initPricingAnimations() {
+      const pricingCards = document.querySelectorAll('.pricing-card');
+      
+      pricingCards.forEach((card, index) => {
+        // Add staggered entrance animation
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(40px)';
+        
+        setTimeout(() => {
+          card.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, index * 200);
+        
+        // Add interactive hover effects
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-12px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'translateY(0) scale(1)';
+        });
+      });
+    }
+    
+    // Initialize all animations
+    window.addEventListener('DOMContentLoaded', () => {
+      animateOnScroll();
+      initPricingAnimations();
+    });
+  </script>
 </body>
 </html>
