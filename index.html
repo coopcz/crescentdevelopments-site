@@ -17,6 +17,7 @@
     <div class="nav-logo-wrap">
       <img src="logo.png" alt="Crescent Developments Logo" class="nav-logo-img" />
       <span class="nav-logo-text">Crescent Developments</span>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
     </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
@@ -28,8 +29,9 @@
 
   <!-- Hero -->
   <header class="hero">
-    <h1>Building quality software & apps</h1>
-    <p>Modern mobile and web solutions, crafted with care.</p>
+    <h1 id="typewriter">Building quality software & apps</h1>
+    <p>Modern mobile and web solutions, crafted with care using Cursor AI-powered development.</p>
+    <p class="hero-subtitle">Get a working demo in 3 days or less</p>
     <a href="#contact" class="btn">Start a Project</a>
   </header>
 
@@ -43,10 +45,110 @@
   <section id="services" class="section alt" data-animate>
     <h2>Services</h2>
     <div class="grid">
-      <div class="card" data-animate><h3>Mobile Apps</h3><p>iOS & Android development</p></div>
+      <div class="card" data-animate><h3>Mobile Apps</h3><p>React Native & Expo development</p></div>
       <div class="card" data-animate><h3>Web Apps</h3><p>Modern, responsive websites</p></div>
       <div class="card" data-animate><h3>UI/UX Design</h3><p>Minimal, intuitive interfaces</p></div>
+      <div class="card" data-animate><h3>AI Integration</h3><p>Cursor AI & custom AI solutions</p></div>
       <div class="card" data-animate><h3>Cloud Backends</h3><p>Secure, scalable infrastructure</p></div>
+      <div class="card" data-animate><h3>Project Rescue</h3><p>Clean up & launch existing code</p></div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="section" data-animate>
+    <h2>Our Development Process</h2>
+    <p class="section-subtitle">How we turn your ideas into reality</p>
+    
+    <div class="process-container">
+      <div class="process-step" data-animate>
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Discovery & Planning</h3>
+          <p>We analyze your requirements and create a detailed roadmap using AI-powered tools to identify the best technical approach.</p>
+        </div>
+      </div>
+      
+      <div class="process-step" data-animate>
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>AI-Powered Development</h3>
+          <p>We leverage Cursor AI and our extensive library of pre-built components to accelerate development while maintaining quality.</p>
+        </div>
+      </div>
+      
+      <div class="process-step" data-animate>
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Rapid Prototyping</h3>
+          <p>Using React Native, Expo, and our component library, we build your MVP in 2-4 weeks with iterative feedback.</p>
+        </div>
+      </div>
+      
+      <div class="process-step" data-animate>
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Testing & Optimization</h3>
+          <p>Comprehensive testing across devices, performance optimization, and security enhancements before launch.</p>
+        </div>
+      </div>
+      
+      <div class="process-step" data-animate>
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <h3>Deployment & Launch</h3>
+          <p>Seamless deployment to production with monitoring, documentation, and 30-day support to ensure success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section alt" data-animate>
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-container">
+      <div class="testimonial-carousel" id="testimonialCarousel">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "Built an amazing product so quick, my project has already paid for itself. The AI-powered development approach is incredible!"
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Sarah Johnson</div>
+              <div class="author-title">Founder, TechStartup</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "Crescent Developments transformed our half-finished project into a polished, launch-ready product in just 3 weeks!"
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Michael Chen</div>
+              <div class="author-title">CEO, InnovateCorp</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <div class="testimonial-text">
+              "The React Native app they built exceeded our expectations. Fast, reliable, and the user experience is flawless."
+            </div>
+            <div class="testimonial-author">
+              <div class="author-name">Emily Rodriguez</div>
+              <div class="author-title">Product Manager, MobileFirst</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
     </div>
   </section>
 
@@ -71,7 +173,6 @@
       <!-- MVP Package -->
       <div class="pricing-card mvp-card" data-animate>
         <div class="pricing-header">
-          <div class="pricing-badge">Most Popular</div>
           <h3>MVP Package</h3>
           <p class="pricing-description">Get your idea to market fast</p>
         </div>
@@ -91,41 +192,61 @@
         
         <ul class="pricing-features">
           <li>✓ Custom MVP development</li>
-          <li>✓ Responsive design</li>
-          <li>✓ Core functionality</li>
-          <li>✓ Deployment ready</li>
-          <li>✓ 30-day support</li>
+          <li>✓ Responsive design (mobile & desktop)</li>
+          <li>✓ Core functionality & features</li>
+          <li>✓ AI-powered development</li>
+          <li>✓ Pre-built component library</li>
+          <li>✓ Database setup & integration</li>
+          <li>✓ User authentication system</li>
+          <li>✓ Payment processing setup</li>
+          <li>✓ Deployment & hosting</li>
+          <li>✓ 30-day support & bug fixes</li>
+          <li>✓ Performance optimization</li>
+          <li>✓ SEO optimization</li>
         </ul>
         
         <a href="#contact" class="btn pricing-btn">Start Your MVP</a>
       </div>
       
-      <!-- Ongoing Support -->
-      <div class="pricing-card support-card" data-animate>
+      <!-- Project Rescue -->
+      <div class="pricing-card rescue-card" data-animate>
         <div class="pricing-header">
-          <h3>Ongoing Support</h3>
-          <p class="pricing-description">Keep your product growing</p>
+          <h3>Project Rescue</h3>
+          <p class="pricing-description">Clean up & launch existing code</p>
         </div>
         
         <div class="pricing-price">
-          <span class="currency">$</span>
-          <span class="amount">500</span>
-          <span class="period">/month</span>
+          <span class="amount">Custom</span>
+          <span class="period">pricing</span>
         </div>
         
         <div class="pricing-note">
-          <span>+ $2,000 initial setup</span>
+          <span>Contact us for a quote</span>
+        </div>
+        
+        <div class="pricing-timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <span>2-4 weeks delivery</span>
+          </div>
         </div>
         
         <ul class="pricing-features">
-          <li>✓ Monthly updates & maintenance</li>
-          <li>✓ Bug fixes & improvements</li>
-          <li>✓ Feature additions</li>
+          <li>✓ Code cleanup & optimization</li>
+          <li>✓ Bug fixes & error resolution</li>
+          <li>✓ Feature completion</li>
+          <li>✓ UI/UX improvements</li>
           <li>✓ Performance optimization</li>
-          <li>✓ Priority support</li>
+          <li>✓ Security enhancements</li>
+          <li>✓ Database optimization</li>
+          <li>✓ Mobile responsiveness</li>
+          <li>✓ Testing & quality assurance</li>
+          <li>✓ Deployment preparation</li>
+          <li>✓ Documentation</li>
+          <li>✓ Launch support</li>
         </ul>
         
-        <a href="#contact" class="btn pricing-btn secondary">Get Ongoing Support</a>
+        <a href="#contact" class="btn pricing-btn secondary">Get Quote</a>
       </div>
     </div>
   </section>
@@ -140,6 +261,17 @@
   <footer>
     <p>© 2025 Crescent Developments LLC</p>
   </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+      <div class="cookie-buttons">
+        <button id="acceptCookies" class="btn small">Accept</button>
+        <button id="declineCookies" class="btn small secondary">Decline</button>
+      </div>
+    </div>
+  </div>
 
   <script>
     // Animate sections and cards on scroll
@@ -183,10 +315,144 @@
       });
     }
     
+    // Typewriter effect
+    function initTypewriter() {
+      const typewriterElement = document.getElementById('typewriter');
+      const text = typewriterElement.textContent;
+      typewriterElement.textContent = '';
+      typewriterElement.classList.add('typewriter');
+      
+      let i = 0;
+      const typeWriter = () => {
+        if (i < text.length) {
+          typewriterElement.textContent += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 100);
+        }
+      };
+      
+      setTimeout(typeWriter, 1000);
+    }
+    
+    // Testimonials carousel
+    function initTestimonialsCarousel() {
+      const slides = document.querySelectorAll('.testimonial-slide');
+      const dots = document.querySelectorAll('.dot');
+      let currentSlide = 0;
+      
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.classList.remove('active', 'prev');
+          if (i === index) {
+            slide.classList.add('active');
+          } else if (i < index) {
+            slide.classList.add('prev');
+          }
+        });
+        
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === index);
+        });
+      }
+      
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+      }
+      
+      // Auto-rotate every 5 seconds
+      setInterval(nextSlide, 5000);
+      
+      // Dot navigation
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          showSlide(currentSlide);
+        });
+      });
+    }
+    
+    // Theme toggle
+    function initThemeToggle() {
+      const themeToggle = document.getElementById('themeToggle');
+      const body = document.body;
+      
+      // Check for saved theme preference
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light') {
+        body.classList.add('light-theme');
+        themeToggle.textContent = '☀️';
+      }
+      
+      themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-theme');
+        const isLight = body.classList.contains('light-theme');
+        themeToggle.textContent = isLight ? '☀️' : '🌙';
+        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      });
+    }
+    
+    // Cookie banner
+    function initCookieBanner() {
+      const cookieBanner = document.getElementById('cookieBanner');
+      const acceptBtn = document.getElementById('acceptCookies');
+      const declineBtn = document.getElementById('declineCookies');
+      
+      // Check if user has already made a choice
+      if (!localStorage.getItem('cookieChoice')) {
+        setTimeout(() => {
+          cookieBanner.classList.add('show');
+        }, 2000);
+      }
+      
+      acceptBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieChoice', 'accepted');
+        cookieBanner.classList.remove('show');
+      });
+      
+      declineBtn.addEventListener('click', () => {
+        localStorage.setItem('cookieChoice', 'declined');
+        cookieBanner.classList.remove('show');
+      });
+    }
+    
+    // Advanced animations
+    function initAdvancedAnimations() {
+      // Parallax effect for hero section
+      window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const hero = document.querySelector('.hero');
+        if (hero) {
+          hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+        }
+      });
+      
+      // Magnetic cursor effect for buttons
+      const buttons = document.querySelectorAll('.btn');
+      buttons.forEach(button => {
+        button.addEventListener('mousemove', (e) => {
+          const rect = button.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          
+          button.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+        });
+        
+        button.addEventListener('mouseleave', () => {
+          button.style.transform = 'translate(0, 0)';
+        });
+      });
+    }
+    
     // Initialize all animations
     window.addEventListener('DOMContentLoaded', () => {
       animateOnScroll();
       initPricingAnimations();
+      initTypewriter();
+      initTestimonialsCarousel();
+      initThemeToggle();
+      initCookieBanner();
+      initAdvancedAnimations();
     });
   </script>
 </body>
