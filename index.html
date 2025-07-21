@@ -12,12 +12,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div id="loadingScreen" class="loading-screen">
+    <div class="cosmic-loader">
+      <div class="orbit orbit-1">
+        <div class="planet planet-1"></div>
+      </div>
+      <div class="orbit orbit-2">
+        <div class="planet planet-2"></div>
+      </div>
+      <div class="orbit orbit-3">
+        <div class="planet planet-3"></div>
+      </div>
+      <div class="center-star"></div>
+    </div>
+    <div class="loading-text">
+      <span class="loading-text-word">Building</span>
+      <span class="loading-text-word">Amazing</span>
+      <span class="loading-text-word">Apps</span>
+    </div>
+  </div>
+
+  <!-- Floating Background Elements -->
+  <div class="floating-shapes">
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+    <div class="floating-shape"></div>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-logo-wrap">
       <img src="logo.png" alt="Crescent Developments Logo" class="nav-logo-img" />
       <span class="nav-logo-text">Crescent Developments</span>
-      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
     </div>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
@@ -29,74 +56,74 @@
 
   <!-- Hero -->
   <header class="hero">
-    <h1 id="typewriter">Building quality software & apps</h1>
-    <p>Modern mobile and web solutions, crafted with care using Cursor AI-powered development.</p>
-    <p class="hero-subtitle">Get a working demo in 3 days or less</p>
-    <a href="#contact" class="btn">Start a Project</a>
+    <h1 id="typewriter">Building beautiful consumer mobile apps</h1>
+    <p>We specialize in React Native + Expo and SwiftUI development for consumer-focused mobile applications.</p>
+    <p class="hero-subtitle">From idea to App Store in 3 weeks or less</p>
+    <a href="#contact" class="btn">Start Your App</a>
   </header>
 
   <!-- About -->
   <section id="about" class="section" data-animate>
     <h2>About</h2>
-    <p>Crescent Developments is a boutique software studio focused on clean, scalable, and beautiful digital products. We blend design and engineering to help you launch your next big idea.</p>
+    <p>Crescent Developments is a boutique mobile app studio focused exclusively on consumer applications. We use React Native + Expo and SwiftUI to create beautiful, engaging mobile experiences that users love to interact with daily.</p>
   </section>
 
   <!-- Services -->
   <section id="services" class="section alt" data-animate>
     <h2>Services</h2>
     <div class="grid">
-      <div class="card" data-animate><h3>Mobile Apps</h3><p>React Native & Expo development</p></div>
-      <div class="card" data-animate><h3>Web Apps</h3><p>Modern, responsive websites</p></div>
-      <div class="card" data-animate><h3>UI/UX Design</h3><p>Minimal, intuitive interfaces</p></div>
-      <div class="card" data-animate><h3>AI Integration</h3><p>Cursor AI & custom AI solutions</p></div>
-      <div class="card" data-animate><h3>Cloud Backends</h3><p>Secure, scalable infrastructure</p></div>
-      <div class="card" data-animate><h3>Project Rescue</h3><p>Clean up & launch existing code</p></div>
+      <div class="card" data-animate><h3>React Native + Expo</h3><p>Cross-platform consumer apps with native performance</p></div>
+      <div class="card" data-animate><h3>SwiftUI Development</h3><p>Premium iOS apps with cutting-edge Apple technologies</p></div>
+      <div class="card" data-animate><h3>Consumer App Design</h3><p>User-centered design for engaging mobile experiences</p></div>
+      <div class="card" data-animate><h3>App Store Optimization</h3><p>Launch strategies and store optimization</p></div>
+      <div class="card" data-animate><h3>Push Notifications</h3><p>Engaging user retention and re-engagement systems</p></div>
+      <div class="card" data-animate><h3>In-App Purchases</h3><p>Monetization strategies and subscription management</p></div>
     </div>
   </section>
 
   <!-- Process -->
   <section id="process" class="section" data-animate>
-    <h2>Our Development Process</h2>
-    <p class="section-subtitle">How we turn your ideas into reality</p>
+    <h2>Our Mobile App Development Process</h2>
+    <p class="section-subtitle">How we turn your consumer app idea into reality</p>
     
     <div class="process-container">
       <div class="process-step" data-animate>
         <div class="step-number">01</div>
         <div class="step-content">
-          <h3>Discovery & Planning</h3>
-          <p>We analyze your requirements and create a detailed roadmap using AI-powered tools to identify the best technical approach.</p>
+          <h3>Consumer Research & Validation</h3>
+          <p>We research your target audience and validate your app concept to ensure market fit for consumer mobile applications.</p>
         </div>
       </div>
       
       <div class="process-step" data-animate>
         <div class="step-number">02</div>
         <div class="step-content">
-          <h3>AI-Powered Development</h3>
-          <p>We leverage Cursor AI and our extensive library of pre-built components to accelerate development while maintaining quality.</p>
+          <h3>React Native + SwiftUI Development</h3>
+          <p>Using React Native + Expo for cross-platform reach and SwiftUI for premium iOS experiences, we build your consumer app with modern tools.</p>
         </div>
       </div>
       
       <div class="process-step" data-animate>
         <div class="step-number">03</div>
         <div class="step-content">
-          <h3>Rapid Prototyping</h3>
-          <p>Using React Native, Expo, and our component library, we build your MVP in 2-4 weeks with iterative feedback.</p>
+          <h3>Consumer-Focused Design</h3>
+          <p>We design engaging user interfaces specifically crafted for consumer behavior patterns and mobile-first interactions.</p>
         </div>
       </div>
       
       <div class="process-step" data-animate>
         <div class="step-number">04</div>
         <div class="step-content">
-          <h3>Testing & Optimization</h3>
-          <p>Comprehensive testing across devices, performance optimization, and security enhancements before launch.</p>
+          <h3>Testing & User Feedback</h3>
+          <p>Comprehensive testing with real consumers, performance optimization, and iterative improvements based on user feedback.</p>
         </div>
       </div>
       
       <div class="process-step" data-animate>
         <div class="step-number">05</div>
         <div class="step-content">
-          <h3>Deployment & Launch</h3>
-          <p>Seamless deployment to production with monitoring, documentation, and 30-day support to ensure success.</p>
+          <h3>App Store Launch</h3>
+          <p>Expert App Store and Google Play launch with ASO optimization, marketing materials, and ongoing support for success.</p>
         </div>
       </div>
     </div>
@@ -110,11 +137,11 @@
         <div class="testimonial-slide active">
           <div class="testimonial-content">
             <div class="testimonial-text">
-              "Built an amazing product so quick, my project has already paid for itself. The AI-powered development approach is incredible!"
+              "Our consumer fitness app launched on both iOS and Android simultaneously thanks to their React Native expertise. Already hit 10K downloads!"
             </div>
             <div class="testimonial-author">
               <div class="author-name">Sarah Johnson</div>
-              <div class="author-title">Founder, TechStartup</div>
+              <div class="author-title">Founder, FitLife App</div>
             </div>
           </div>
         </div>
@@ -122,11 +149,11 @@
         <div class="testimonial-slide">
           <div class="testimonial-content">
             <div class="testimonial-text">
-              "Crescent Developments transformed our half-finished project into a polished, launch-ready product in just 3 weeks!"
+              "The SwiftUI app they built for our food delivery service is gorgeous and performs flawlessly. Customer engagement is through the roof!"
             </div>
             <div class="testimonial-author">
               <div class="author-name">Michael Chen</div>
-              <div class="author-title">CEO, InnovateCorp</div>
+              <div class="author-title">CEO, QuickBite</div>
             </div>
           </div>
         </div>
@@ -134,11 +161,11 @@
         <div class="testimonial-slide">
           <div class="testimonial-content">
             <div class="testimonial-text">
-              "The React Native app they built exceeded our expectations. Fast, reliable, and the user experience is flawless."
+              "They understood our consumer market perfectly. The app's user experience and retention rates exceed industry standards."
             </div>
             <div class="testimonial-author">
               <div class="author-name">Emily Rodriguez</div>
-              <div class="author-title">Product Manager, MobileFirst</div>
+              <div class="author-title">Product Director, SocialHub</div>
             </div>
           </div>
         </div>
@@ -166,87 +193,84 @@
 
   <!-- Pricing -->
   <section id="pricing" class="section alt" data-animate>
-    <h2>Simple, Transparent Pricing</h2>
-    <p class="section-subtitle">Choose the plan that fits your vision</p>
+    <h2>Simple, Transparent App Pricing</h2>
+    <p class="section-subtitle">Choose the package that fits your consumer app vision</p>
     
     <div class="pricing-container">
-      <!-- MVP Package -->
+      <!-- Consumer App MVP -->
       <div class="pricing-card mvp-card" data-animate>
         <div class="pricing-header">
-          <h3>MVP Package</h3>
-          <p class="pricing-description">Get your idea to market fast</p>
+          <h3>Consumer App MVP</h3>
+          <p class="pricing-description">Launch your consumer app idea fast</p>
         </div>
         
         <div class="pricing-price">
           <span class="currency">$</span>
-          <span class="amount">2,000</span>
+          <span class="amount">3,500</span>
           <span class="period">one-time</span>
         </div>
         
         <div class="pricing-timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <span>2-4 weeks delivery</span>
+            <span>3 weeks delivery</span>
           </div>
         </div>
         
         <ul class="pricing-features">
-          <li>✓ Custom MVP development</li>
-          <li>✓ Responsive design (mobile & desktop)</li>
-          <li>✓ Core functionality & features</li>
-          <li>✓ AI-powered development</li>
-          <li>✓ Pre-built component library</li>
-          <li>✓ Database setup & integration</li>
-          <li>✓ User authentication system</li>
-          <li>✓ Payment processing setup</li>
-          <li>✓ Deployment & hosting</li>
-          <li>✓ 30-day support & bug fixes</li>
+          <li>✓ React Native + Expo development</li>
+          <li>✓ iOS and Android deployment</li>
+          <li>✓ Consumer-focused UI/UX design</li>
+          <li>✓ User authentication & onboarding</li>
+          <li>✓ Core app functionality</li>
+          <li>✓ Push notification setup</li>
+          <li>✓ Basic analytics integration</li>
+          <li>✓ App Store optimization prep</li>
+          <li>✓ Beta testing with real users</li>
+          <li>✓ 30-day post-launch support</li>
           <li>✓ Performance optimization</li>
-          <li>✓ SEO optimization</li>
+          <li>✓ App Store submission guidance</li>
         </ul>
         
-        <a href="#contact" class="btn pricing-btn">Start Your MVP</a>
+        <a href="#contact" class="btn pricing-btn-small">Start Your App</a>
       </div>
       
-      <!-- Project Rescue -->
+      <!-- Premium SwiftUI App -->
       <div class="pricing-card rescue-card" data-animate>
         <div class="pricing-header">
-          <h3>Project Rescue</h3>
-          <p class="pricing-description">Clean up & launch existing code</p>
+          <h3>Premium SwiftUI App</h3>
+          <p class="pricing-description">iOS-first premium consumer experience</p>
         </div>
         
         <div class="pricing-price">
-          <span class="amount">Custom</span>
-          <span class="period">pricing</span>
-        </div>
-        
-        <div class="pricing-note">
-          <span>Contact us for a quote</span>
+          <span class="currency">$</span>
+          <span class="amount">5,000</span>
+          <span class="period">one-time</span>
         </div>
         
         <div class="pricing-timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
-            <span>2-4 weeks delivery</span>
+            <span>4 weeks delivery</span>
           </div>
         </div>
         
         <ul class="pricing-features">
-          <li>✓ Code cleanup & optimization</li>
-          <li>✓ Bug fixes & error resolution</li>
-          <li>✓ Feature completion</li>
-          <li>✓ UI/UX improvements</li>
-          <li>✓ Performance optimization</li>
-          <li>✓ Security enhancements</li>
-          <li>✓ Database optimization</li>
-          <li>✓ Mobile responsiveness</li>
-          <li>✓ Testing & quality assurance</li>
-          <li>✓ Deployment preparation</li>
-          <li>✓ Documentation</li>
-          <li>✓ Launch support</li>
+          <li>✓ Native SwiftUI development</li>
+          <li>✓ Premium iOS design patterns</li>
+          <li>✓ Apple ecosystem integration</li>
+          <li>✓ HealthKit/HomeKit integration</li>
+          <li>✓ Core Data/CloudKit setup</li>
+          <li>✓ In-app purchase integration</li>
+          <li>✓ Siri Shortcuts support</li>
+          <li>✓ Widget and Apple Watch app</li>
+          <li>✓ App Store review optimization</li>
+          <li>✓ TestFlight beta distribution</li>
+          <li>✓ Premium UI animations</li>
+          <li>✓ 45-day premium support</li>
         </ul>
         
-        <a href="#contact" class="btn pricing-btn secondary">Get Quote</a>
+        <a href="#contact" class="btn pricing-btn-small secondary">Get Quote</a>
       </div>
     </div>
   </section>
@@ -372,24 +396,28 @@
       });
     }
     
-    // Theme toggle
-    function initThemeToggle() {
-      const themeToggle = document.getElementById('themeToggle');
-      const body = document.body;
+    // Loading screen animation
+    function initLoadingScreen() {
+      const loadingScreen = document.getElementById('loadingScreen');
+      const words = document.querySelectorAll('.loading-text-word');
       
-      // Check for saved theme preference
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'light') {
-        body.classList.add('light-theme');
-        themeToggle.textContent = '☀️';
-      }
-      
-      themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-theme');
-        const isLight = body.classList.contains('light-theme');
-        themeToggle.textContent = isLight ? '☀️' : '🌙';
-        localStorage.setItem('theme', isLight ? 'light' : 'dark');
+      // Animate words appearing
+      words.forEach((word, index) => {
+        setTimeout(() => {
+          word.style.opacity = '1';
+          word.style.transform = 'translateY(0)';
+        }, index * 500 + 1000);
       });
+      
+      // Hide loading screen after animation
+      setTimeout(() => {
+        loadingScreen.style.opacity = '0';
+        loadingScreen.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+          document.body.style.overflow = 'auto';
+        }, 800);
+      }, 4000);
     }
     
     // Cookie banner
@@ -418,39 +446,94 @@
     
     // Advanced animations
     function initAdvancedAnimations() {
-      // Parallax effect for hero section
+      // Enhanced parallax effect
       window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
+        const floatingShapes = document.querySelectorAll('.floating-shape');
+        
         if (hero) {
-          hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+          hero.style.transform = `translateY(${scrolled * 0.3}px)`;
         }
+        
+        // Parallax floating shapes
+        floatingShapes.forEach((shape, index) => {
+          const speed = 0.5 + index * 0.2;
+          shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
+        });
       });
       
-      // Magnetic cursor effect for buttons
-      const buttons = document.querySelectorAll('.btn');
+      // Enhanced magnetic effect for buttons
+      const buttons = document.querySelectorAll('.btn, .pricing-btn-small');
       buttons.forEach(button => {
+        button.classList.add('magnetic-btn');
+        
         button.addEventListener('mousemove', (e) => {
           const rect = button.getBoundingClientRect();
           const x = e.clientX - rect.left - rect.width / 2;
           const y = e.clientY - rect.top - rect.height / 2;
           
-          button.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+          button.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.05)`;
         });
         
         button.addEventListener('mouseleave', () => {
-          button.style.transform = 'translate(0, 0)';
+          button.style.transform = 'translate(0, 0) scale(1)';
+        });
+      });
+      
+      // Cursor trail effect
+      let mouseTrail = [];
+      document.addEventListener('mousemove', (e) => {
+        const trail = document.createElement('div');
+        trail.className = 'cursor-trail active';
+        trail.style.left = e.clientX + 'px';
+        trail.style.top = e.clientY + 'px';
+        document.body.appendChild(trail);
+        
+        mouseTrail.push(trail);
+        
+        setTimeout(() => {
+          trail.remove();
+          mouseTrail = mouseTrail.filter(t => t !== trail);
+        }, 600);
+        
+        // Limit trail length
+        if (mouseTrail.length > 10) {
+          const oldTrail = mouseTrail.shift();
+          oldTrail.remove();
+        }
+      });
+      
+      // Tilt effect for cards
+      const cards = document.querySelectorAll('.card, .pricing-card');
+      cards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          
+          const rotateX = (y - centerY) / 10;
+          const rotateY = (centerX - x) / 10;
+          
+          card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(20px)`;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateZ(0)';
         });
       });
     }
     
     // Initialize all animations
     window.addEventListener('DOMContentLoaded', () => {
+      initLoadingScreen();
       animateOnScroll();
       initPricingAnimations();
       initTypewriter();
       initTestimonialsCarousel();
-      initThemeToggle();
       initCookieBanner();
       initAdvancedAnimations();
     });
