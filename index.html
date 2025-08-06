@@ -33,12 +33,7 @@
     </div>
   </div>
 
-  <!-- Floating Background Elements -->
-  <div class="floating-shapes">
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-    <div class="floating-shape"></div>
-  </div>
+
 
   <!-- Navbar -->
   <nav class="navbar">
@@ -221,15 +216,8 @@
           <li>✓ React Native + Expo development</li>
           <li>✓ iOS and Android deployment</li>
           <li>✓ Consumer-focused UI/UX design</li>
-          <li>✓ User authentication & onboarding</li>
-          <li>✓ Core app functionality</li>
-          <li>✓ Push notification setup</li>
-          <li>✓ Basic analytics integration</li>
-          <li>✓ App Store optimization prep</li>
-          <li>✓ Beta testing with real users</li>
+          <li>✓ App Store launch support</li>
           <li>✓ 30-day post-launch support</li>
-          <li>✓ Performance optimization</li>
-          <li>✓ App Store submission guidance</li>
         </ul>
         
         <a href="#contact" class="btn pricing-btn-small">Start Your App</a>
@@ -259,14 +247,7 @@
           <li>✓ Native SwiftUI development</li>
           <li>✓ Premium iOS design patterns</li>
           <li>✓ Apple ecosystem integration</li>
-          <li>✓ HealthKit/HomeKit integration</li>
-          <li>✓ Core Data/CloudKit setup</li>
-          <li>✓ In-app purchase integration</li>
-          <li>✓ Siri Shortcuts support</li>
           <li>✓ Widget and Apple Watch app</li>
-          <li>✓ App Store review optimization</li>
-          <li>✓ TestFlight beta distribution</li>
-          <li>✓ Premium UI animations</li>
           <li>✓ 45-day premium support</li>
         </ul>
         
@@ -446,21 +427,14 @@
     
     // Advanced animations
     function initAdvancedAnimations() {
-      // Enhanced parallax effect
+      // Enhanced parallax effect for hero
       window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
-        const floatingShapes = document.querySelectorAll('.floating-shape');
         
         if (hero) {
-          hero.style.transform = `translateY(${scrolled * 0.3}px)`;
+          hero.style.transform = `translateY(${scrolled * 0.2}px)`;
         }
-        
-        // Parallax floating shapes
-        floatingShapes.forEach((shape, index) => {
-          const speed = 0.5 + index * 0.2;
-          shape.style.transform = `translateY(${scrolled * speed}px) rotate(${scrolled * 0.1}deg)`;
-        });
       });
       
       // Enhanced magnetic effect for buttons
@@ -481,27 +455,20 @@
         });
       });
       
-      // Cursor trail effect
-      let mouseTrail = [];
-      document.addEventListener('mousemove', (e) => {
-        const trail = document.createElement('div');
-        trail.className = 'cursor-trail active';
-        trail.style.left = e.clientX + 'px';
-        trail.style.top = e.clientY + 'px';
-        document.body.appendChild(trail);
+      // Responsive navbar on scroll
+      let lastScrollY = window.scrollY;
+      const navbar = document.querySelector('.navbar');
+      
+      window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
         
-        mouseTrail.push(trail);
-        
-        setTimeout(() => {
-          trail.remove();
-          mouseTrail = mouseTrail.filter(t => t !== trail);
-        }, 600);
-        
-        // Limit trail length
-        if (mouseTrail.length > 10) {
-          const oldTrail = mouseTrail.shift();
-          oldTrail.remove();
+        if (currentScrollY > 100) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
         }
+        
+        lastScrollY = currentScrollY;
       });
       
       // Tilt effect for cards
