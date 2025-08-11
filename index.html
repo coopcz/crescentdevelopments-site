@@ -12,26 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Loading Screen -->
-  <div id="loadingScreen" class="loading-screen">
-    <div class="cosmic-loader">
-      <div class="orbit orbit-1">
-        <div class="planet planet-1"></div>
-      </div>
-      <div class="orbit orbit-2">
-        <div class="planet planet-2"></div>
-      </div>
-      <div class="orbit orbit-3">
-        <div class="planet planet-3"></div>
-      </div>
-      <div class="center-star"></div>
-    </div>
-    <div class="loading-text">
-      <span class="loading-text-word">Building</span>
-      <span class="loading-text-word">Amazing</span>
-      <span class="loading-text-word">Apps</span>
-    </div>
-  </div>
+  
 
 
 
@@ -51,7 +32,7 @@
 
   <!-- Hero -->
   <header class="hero">
-    <h1 id="typewriter">Building beautiful consumer mobile apps</h1>
+    <h1>Building beautiful consumer mobile apps</h1>
     <p>We specialize in React Native + Expo and SwiftUI development for consumer-focused mobile applications.</p>
     <p class="hero-subtitle">From idea to App Store in 3 weeks or less</p>
     <a href="#contact" class="btn">Start Your App</a>
@@ -66,13 +47,23 @@
   <!-- Services -->
   <section id="services" class="section alt" data-animate>
     <h2>Services</h2>
-    <div class="grid">
-      <div class="card" data-animate><h3>React Native + Expo</h3><p>Cross-platform consumer apps with native performance</p></div>
-      <div class="card" data-animate><h3>SwiftUI Development</h3><p>Premium iOS apps with cutting-edge Apple technologies</p></div>
-      <div class="card" data-animate><h3>Consumer App Design</h3><p>User-centered design for engaging mobile experiences</p></div>
-      <div class="card" data-animate><h3>App Store Optimization</h3><p>Launch strategies and store optimization</p></div>
-      <div class="card" data-animate><h3>Push Notifications</h3><p>Engaging user retention and re-engagement systems</p></div>
-      <div class="card" data-animate><h3>In-App Purchases</h3><p>Monetization strategies and subscription management</p></div>
+    <div class="grid services-grid">
+      <div class="card service" data-animate>
+        <h3>SwiftUI App Development</h3>
+        <p>Premium native iOS apps built with SwiftUI. Fast, smooth, and delightful.</p>
+      </div>
+      <div class="card service" data-animate>
+        <h3>React Native + Expo</h3>
+        <p>Cross‑platform apps for iOS and Android using a single codebase.</p>
+      </div>
+      <div class="card service" data-animate>
+        <h3>Websites & Landing Pages</h3>
+        <p>High‑converting marketing sites and product pages that load fast.</p>
+      </div>
+      <div class="card service" data-animate>
+        <h3>App Store Launch & ASO</h3>
+        <p>Submission, screenshots, copy, keywords, and growth‑friendly setups.</p>
+      </div>
     </div>
   </section>
 
@@ -177,13 +168,20 @@
   <!-- Work -->
   <section id="work" class="section" data-animate>
     <h2>Featured Work</h2>
-    <div class="card highlight" data-animate>
-      <img src="/favicon_512x512.png" alt="Latter Study Logo" class="work-logo">
-      <h3>Latter Study</h3>
-      <p>AI-powered gospel study for LDS members. Generate talks, lessons, and daily insights.</p>
-      <a href="https://latterstudy.com" class="btn small" target="_blank" rel="noopener noreferrer">View Project</a>
+    <div class="grid work-grid">
+      <div class="card highlight" data-animate>
+        <img src="/favicon_512x512.png" alt="Latter Study Logo" class="work-logo">
+        <h3>Latter Study</h3>
+        <p>AI-powered gospel study for LDS members. Generate talks, lessons, and daily insights.</p>
+        <a href="https://latterstudy.com" class="btn small" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+      <div class="card highlight" data-animate>
+        <img src="MoreReads logo v2 512.png" alt="MoreReads Logo" class="work-logo">
+        <h3>MoreReads</h3>
+        <p>SwiftUI book tracker that helps you build a reading habit with sessions, streaks, stats, and notes.</p>
+        <a href="https://www.morereadsapp.com" class="btn small" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
     </div>
-    <!-- Add more project images/screenshots here in the future -->
   </section>
 
   <!-- Pricing -->
@@ -320,24 +318,7 @@
       });
     }
     
-    // Typewriter effect
-    function initTypewriter() {
-      const typewriterElement = document.getElementById('typewriter');
-      const text = typewriterElement.textContent;
-      typewriterElement.textContent = '';
-      typewriterElement.classList.add('typewriter');
-      
-      let i = 0;
-      const typeWriter = () => {
-        if (i < text.length) {
-          typewriterElement.textContent += text.charAt(i);
-          i++;
-          setTimeout(typeWriter, 100);
-        }
-      };
-      
-      setTimeout(typeWriter, 1000);
-    }
+    
     
     // Testimonials carousel
     function initTestimonialsCarousel() {
@@ -377,29 +358,7 @@
       });
     }
     
-    // Loading screen animation
-    function initLoadingScreen() {
-      const loadingScreen = document.getElementById('loadingScreen');
-      const words = document.querySelectorAll('.loading-text-word');
-      
-      // Animate words appearing
-      words.forEach((word, index) => {
-        setTimeout(() => {
-          word.style.opacity = '1';
-          word.style.transform = 'translateY(0)';
-        }, index * 500 + 1000);
-      });
-      
-      // Hide loading screen after animation
-      setTimeout(() => {
-        loadingScreen.style.opacity = '0';
-        loadingScreen.style.transform = 'scale(1.1)';
-        setTimeout(() => {
-          loadingScreen.style.display = 'none';
-          document.body.style.overflow = 'auto';
-        }, 800);
-      }, 4000);
-    }
+    
     
     // Cookie banner
     function initCookieBanner() {
@@ -496,10 +455,8 @@
     
     // Initialize all animations
     window.addEventListener('DOMContentLoaded', () => {
-      initLoadingScreen();
       animateOnScroll();
       initPricingAnimations();
-      initTypewriter();
       initTestimonialsCarousel();
       initCookieBanner();
       initAdvancedAnimations();

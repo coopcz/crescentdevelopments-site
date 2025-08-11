@@ -11,150 +11,10 @@ body {
   color: #fff;
   margin: 0;
   line-height: 1.6;
-  overflow: hidden; /* Initially hidden during loading */
+  overflow: auto;
 }
 
-/* Loading Screen Styles */
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, #1a1a2e 0%, #16213e 50%, #0f0f23 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cosmic-loader {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 3rem;
-}
-
-.center-star {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, #fff 0%, #ffd700 50%, #ff6b6b 100%);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 
-    0 0 20px #fff,
-    0 0 40px #ffd700,
-    0 0 60px #ff6b6b;
-  animation: starPulse 2s ease-in-out infinite;
-}
-
-@keyframes starPulse {
-  0%, 100% { 
-    transform: translate(-50%, -50%) scale(1);
-    box-shadow: 
-      0 0 20px #fff,
-      0 0 40px #ffd700,
-      0 0 60px #ff6b6b;
-  }
-  50% { 
-    transform: translate(-50%, -50%) scale(1.2);
-    box-shadow: 
-      0 0 30px #fff,
-      0 0 60px #ffd700,
-      0 0 90px #ff6b6b;
-  }
-}
-
-.orbit {
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.orbit-1 {
-  width: 80px;
-  height: 80px;
-  animation: orbit 3s linear infinite;
-}
-
-.orbit-2 {
-  width: 120px;
-  height: 120px;
-  animation: orbit 5s linear infinite reverse;
-}
-
-.orbit-3 {
-  width: 160px;
-  height: 160px;
-  animation: orbit 7s linear infinite;
-}
-
-@keyframes orbit {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.planet {
-  position: absolute;
-  border-radius: 50%;
-  top: -6px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.planet-1 {
-  width: 12px;
-  height: 12px;
-  background: linear-gradient(45deg, #ff6b6b, #ffd93d);
-  box-shadow: 0 0 15px #ff6b6b;
-}
-
-.planet-2 {
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(45deg, #4ecdc4, #44a08d);
-  box-shadow: 0 0 12px #4ecdc4;
-}
-
-.planet-3 {
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(45deg, #667eea, #764ba2);
-  box-shadow: 0 0 10px #667eea;
-}
-
-.loading-text {
-  display: flex;
-  gap: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
-}
-
-.loading-text-word {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(45deg, #667eea, #764ba2, #ff6b6b);
-  background-size: 300% 300%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientShift 3s ease-in-out infinite;
-}
-
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
+/* Loading screen styles removed */
 
 /* Navbar */
 .navbar {
@@ -168,15 +28,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
+  padding: 1.75rem 2.25rem;
   border-bottom: 1px solid rgba(102, 126, 234, 0.2);
   z-index: 1000;
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
   box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
 }
 
 .navbar.scrolled {
-  padding: 0.8rem 2rem;
+  padding: 1rem 2rem;
   background: rgba(0, 0, 0, 0.95);
   border-bottom-color: rgba(102, 126, 234, 0.3);
   box-shadow: 0 4px 30px rgba(0,0,0,0.5);
@@ -194,23 +56,24 @@ body {
 }
 
 .nav-logo-img {
-  height: 44px;
+  height: 64px;
   width: auto;
   display: block;
   background: #fff;
   border-radius: 50%;
-  padding: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08), 0 1px 3px rgba(0,0,0,0.05);
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(102, 126, 234, 0.35), 0 2px 6px rgba(0,0,0,0.2);
+  border: 2px solid rgba(255,255,255,0.9);
   transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .navbar.scrolled .nav-logo-img {
-  height: 36px;
-  padding: 4px;
+  height: 48px;
+  padding: 6px;
 }
 
 .navbar.scrolled .nav-logo-text {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
 .nav-logo-img:hover {
@@ -266,10 +129,12 @@ body {
 /* Hero */
 .hero {
   text-align: center;
-  padding: 8rem 1rem 4rem 1rem;
+  padding: 9rem 1rem 4rem 1rem;
   background: transparent;
   position: relative;
   overflow: hidden;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
 }
 
 .hero::before {
@@ -281,6 +146,39 @@ body {
   bottom: 0;
   background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="0.5" fill="%23ffffff" opacity="0.05"/><circle cx="75" cy="75" r="0.3" fill="%23ffffff" opacity="0.03"/><circle cx="50" cy="10" r="0.4" fill="%23ffffff" opacity="0.04"/><circle cx="10" cy="50" r="0.2" fill="%23ffffff" opacity="0.02"/><circle cx="90" cy="30" r="0.3" fill="%23ffffff" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
   animation: floatStars 20s ease-in-out infinite;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+}
+.navbar.scrolled + .hero {
+  padding-top: 10rem;
+}
+
+/* Services simplified layout */
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.services-grid .service {
+  text-align: center;
+}
+
+.services-grid .service h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-grid .service p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* Work grid */
+.work-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.work-logo {
+  width: 96px;
 }
 
 @keyframes floatStars {
@@ -1050,25 +948,7 @@ footer {
   flex-shrink: 0;
 }
 
-/* Typewriter Effect */
-.typewriter {
-  overflow: hidden;
-  border-right: 2px solid #fff;
-  white-space: nowrap;
-  display: inline-block;
-  width: 0;
-  animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #fff; }
-}
+/* Typewriter effect removed */
 
 /* Enhanced Grid for 6 Services */
 .grid {
