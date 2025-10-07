@@ -3,60 +3,146 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Crescent Developments LLC</title>
+  <title>Crescent Developments LLC - Mobile & Web App Development</title>
+  <meta name="description" content="We build custom mobile and web apps that fit your business in 30 days. Based in Pasco, Washington, serving the Tri-Cities area.">
   <link rel="icon" type="image/png" href="/crescent.png" sizes="512x512" />
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="crescent.png" alt="Crescent Developments Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Crescent Developments</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="discovery.html" class="nav-link nav-cta">Schedule Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <main class="container">
-    <!-- Company Logo -->
-    <div class="logo-section">
-      <img src="crescent.png" alt="Crescent Developments Logo" class="company-logo" />
-    </div>
-
-    <!-- Applications Showcase -->
-    <div class="apps-grid">
-      <a href="https://apps.apple.com/us/app/latter-study-ai-gospel-study/id6746012386" target="_blank" rel="noopener noreferrer" class="app-card">
-        <img src="Latter Study 512.png" alt="Latter Study Logo" class="app-logo" />
-        <h2>Latter Study</h2>
-        <p>AI-powered gospel study with daily scriptures, talk builders, and Q&A chatbot.</p>
-      </a>
-
-      <a href="https://apps.apple.com/us/app/morereads-book-tracker/id6748970068" target="_blank" rel="noopener noreferrer" class="app-card">
-        <img src="MoreReads logo v2 512.png" alt="MoreReads Logo" class="app-logo" />
-        <h2>MoreReads</h2>
-        <p>Reading companion app to build habits, track books, and log reading sessions.</p>
-      </a>
-
-      <a href="https://apps.apple.com/us/app/banananote-ai-note-taker/id6749599834" target="_blank" rel="noopener noreferrer" class="app-card">
-        <img src="BananaNote 864.png" alt="BananaNote Logo" class="app-logo" />
-        <h2>BananaNote</h2>
-        <p>AI note taker designed to capture and organize your thoughts effortlessly.</p>
-      </a>
-
-      <div class="app-card coming-soon-card">
-        <div class="coming-soon-icon">✨</div>
-        <h2>More coming soon...</h2>
-        <p>Follow my X <a href="https://x.com/coopczz" target="_blank" rel="noopener noreferrer" class="x-link">@coopczz</a> for updates</p>
+    <!-- Hero Section -->
+    <section class="hero-section fade-in">
+      <div class="logo-section">
+        <img src="crescent.png" alt="Crescent Developments Logo" class="company-logo" />
       </div>
-    </div>
+      <h1 class="hero-title">We build custom apps that fit your business in 30 days</h1>
+      <p class="hero-subtitle">Premium mobile and web applications for local businesses in the Tri-Cities area</p>
+      <div class="hero-cta">
+        <a href="discovery.html" class="btn btn-primary">Schedule Discovery Call</a>
+        <a href="services.html" class="btn btn-secondary">View Services</a>
+      </div>
+    </section>
 
-    <!-- Social Links -->
-    <div class="social-links">
-      <a href="https://github.com/coopcz" target="_blank" rel="noopener noreferrer" class="social-link">
-        <span>GitHub</span>
-      </a>
-      <a href="https://x.com/coopczz" target="_blank" rel="noopener noreferrer" class="social-link">
-        <span>X</span>
-      </a>
-    </div>
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+      <h2 class="section-title">Our Work</h2>
+      <p class="section-subtitle">Apps we've built, delivered in less than 30 days each</p>
+      
+      <div class="apps-grid">
+        <a href="https://apps.apple.com/us/app/latter-study-ai-gospel-study/id6746012386" target="_blank" rel="noopener noreferrer" class="app-card slide-up">
+          <img src="Latter Study 512.png" alt="Latter Study Logo" class="app-logo" />
+          <h3>Latter Study</h3>
+          <p class="app-description">AI-powered gospel study with daily scriptures, talk builders, and Q&A chatbot.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">React Native</span>
+            <span class="tech-tag">Expo</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+          <div class="project-timeline">Built in less than 30 days</div>
+        </a>
+
+        <a href="https://apps.apple.com/us/app/banananote-ai-note-taker/id6749599834" target="_blank" rel="noopener noreferrer" class="app-card slide-up">
+          <img src="BananaNote 864.png" alt="BananaNote Logo" class="app-logo" />
+          <h3>BananaNote</h3>
+          <p class="app-description">AI note taker with intelligent organization and Screen Time integration for productivity insights.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">Screen Time API</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+          <div class="project-timeline">Built in less than 30 days</div>
+        </a>
+
+        <a href="https://apps.apple.com/us/app/morereads-book-tracker/id6748970068" target="_blank" rel="noopener noreferrer" class="app-card slide-up">
+          <img src="MoreReads logo v2 512.png" alt="MoreReads Logo" class="app-logo" />
+          <h3>MoreReads</h3>
+          <p class="app-description">Reading companion app with Google Books integration to build habits and track reading sessions.</p>
+          <div class="tech-stack">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">Google Books API</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+          <div class="project-timeline">Built in less than 30 days</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (Empty but ready) -->
+    <section class="testimonials-section">
+      <h2 class="section-title">What Our Clients Say</h2>
+      <div class="testimonials-placeholder">
+        <p>Client testimonials coming soon...</p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <h2 class="cta-title">Ready to build your app?</h2>
+      <p class="cta-subtitle">Schedule a free discovery call to discuss your project</p>
+      <a href="discovery.html" class="btn btn-primary btn-lg">Get Started Today</a>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>Copyright 2025 Crescent Developments LLC</p>
-    <a href="mailto:support@crescentdevelopments.org" class="contact-link">Contact</a>
+    <div class="footer-content">
+      <div class="footer-section">
+        <img src="crescent.png" alt="Crescent Developments Logo" class="footer-logo" />
+        <p class="footer-location">Based out of Pasco, Washington</p>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:support@crescentdevelopments.org">support@crescentdevelopments.org</a></li>
+          <li><a href="discovery.html">Schedule a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crescent Developments LLC. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

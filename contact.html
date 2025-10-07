@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Crescent Developments LLC</title>
+  <meta name="description" content="Get in touch with Crescent Developments. We're here to help bring your app idea to life.">
+  <link rel="icon" type="image/png" href="/crescent.png" sizes="512x512" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img src="crescent.png" alt="Crescent Developments Logo" class="nav-logo-img" />
+        <span class="nav-logo-text">Crescent Developments</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        <li><a href="discovery.html" class="nav-link nav-cta">Schedule Call</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container page-content">
+    <!-- Page Header -->
+    <section class="page-header fade-in">
+      <h1 class="page-title">Get In Touch</h1>
+      <p class="page-subtitle">Have a question or project in mind? We'd love to hear from you.</p>
+    </section>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <section class="contact-form-section slide-up">
+        <form class="contact-form" action="https://formsubmit.co/support@crescentdevelopments.org" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Contact Form Submission from Crescent Developments">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+          </div>
+
+          <div class="form-group">
+            <label for="business">Business Name *</label>
+            <input type="text" id="business" name="business" required placeholder="Your Business LLC">
+          </div>
+
+          <div class="form-group">
+            <label for="project">Project Description *</label>
+            <textarea id="project" name="project" rows="6" required placeholder="Tell us about your project idea, goals, and what you're looking to build..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+
+        <div class="form-note">
+          <p>* Required fields</p>
+          <p>Looking to schedule a call instead? <a href="discovery.html">Book a discovery call here</a></p>
+        </div>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info-section slide-up">
+        <div class="contact-info-card">
+          <h3>Contact Information</h3>
+          <div class="info-item">
+            <div class="info-icon">📧</div>
+            <div class="info-content">
+              <h4>Email</h4>
+              <a href="mailto:support@crescentdevelopments.org">support@crescentdevelopments.org</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <h4>Location</h4>
+              <p>Based out of Pasco, Washington<br>Serving the Tri-Cities area</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">⏱️</div>
+            <div class="info-content">
+              <h4>Response Time</h4>
+              <p>We typically respond within 24 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-cta-card">
+          <h3>Prefer to talk?</h3>
+          <p>Schedule a free discovery call to discuss your project in real-time.</p>
+          <a href="discovery.html" class="btn btn-secondary btn-full">Schedule Discovery Call</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <img src="crescent.png" alt="Crescent Developments Logo" class="footer-logo" />
+        <p class="footer-location">Based out of Pasco, Washington</p>
+      </div>
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Connect</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:support@crescentdevelopments.org">support@crescentdevelopments.org</a></li>
+          <li><a href="discovery.html">Schedule a Call</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crescent Developments LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
