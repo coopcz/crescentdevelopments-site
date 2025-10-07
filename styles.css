@@ -724,154 +724,105 @@ html {
 }
 
 /* Discovery Page */
-.discovery-info {
+.discovery-split-section {
   width: 100%;
-  margin-bottom: 3rem;
-  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.discovery-intro {
-  font-size: 1.1rem;
-  color: var(--color-text-muted);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.discovery-cards {
+.discovery-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
 }
 
-.discovery-card {
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: 20px;
-  padding: 2.5rem;
+.discovery-text {
+  padding-right: 2rem;
 }
 
-.discovery-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.discovery-card h3 {
-  font-size: 1.5rem;
+.discovery-text h2 {
+  font-size: 2rem;
   font-weight: 600;
   color: var(--color-text-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
 }
 
-.discovery-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.discovery-card li {
-  color: var(--color-text-muted);
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
-  position: relative;
-  line-height: 1.6;
-}
-
-.discovery-card li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: var(--color-accent);
-  font-weight: bold;
-}
-
-.calendly-section {
-  width: 100%;
-  margin-bottom: 3rem;
-}
-
-.calendly-container {
-  background: var(--color-bg-secondary);
-  border: 1px solid var(--color-border);
-  border-radius: 20px;
-  padding: 2rem;
-  min-height: 700px;
-}
-
-.calendly-placeholder {
-  text-align: center;
-  padding: 3rem 2rem;
-}
-
-.placeholder-icon {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  opacity: 0.5;
-}
-
-.calendly-placeholder h3 {
-  font-size: 1.75rem;
-  color: var(--color-text-primary);
-  margin-bottom: 1rem;
-}
-
-.calendly-placeholder > p {
-  color: var(--color-text-muted);
-  margin-bottom: 2rem;
+.discovery-text > p {
   font-size: 1.1rem;
-}
-
-.placeholder-instructions {
-  background: var(--color-bg-primary);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 2rem;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.placeholder-instructions h4 {
-  color: var(--color-text-primary);
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.placeholder-instructions ol {
   color: var(--color-text-muted);
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
-  line-height: 1.8;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
-.instruction-note {
+.discovery-benefits {
+  margin-bottom: 2.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1rem;
   color: var(--color-text-secondary);
-  margin-bottom: 0.75rem;
-  font-weight: 500;
-}
-
-.placeholder-instructions code {
-  display: block;
-  background: #0d0d0d;
-  padding: 1rem;
-  border-radius: 8px;
-  color: #8b9eff;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.6;
-  overflow-x: auto;
 }
 
-.alternative-contact {
-  text-align: center;
+.benefit-check {
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.discovery-cta-text {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(99, 102, 241, 0.05) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.discovery-cta-text p {
+  margin: 0;
+  color: var(--color-text-primary);
+  font-size: 1.05rem;
+}
+
+.discovery-cta-text strong {
+  color: var(--color-text-primary);
+}
+
+.alternative-contact-inline {
+  text-align: left;
   color: var(--color-text-muted);
   font-size: 0.95rem;
 }
 
-.alternative-contact a {
+.alternative-contact-inline a {
   color: var(--color-accent);
   text-decoration: none;
 }
 
-.alternative-contact a:hover {
+.alternative-contact-inline a:hover {
   text-decoration: underline;
+}
+
+.discovery-scheduler {
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+}
+
+.discovery-scheduler .calendly-inline-widget {
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* About Page */
@@ -1224,6 +1175,15 @@ html {
 
   .founder-image-placeholder {
     margin-bottom: 1rem;
+  }
+
+  .discovery-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .discovery-text {
+    padding-right: 0;
   }
 }
 
