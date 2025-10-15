@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="/crescent.png" sizes="512x512" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -42,7 +43,7 @@
     <!-- Services Grid -->
     <section class="services-grid">
       <div class="service-card slide-up">
-        <div class="service-icon">📱</div>
+        <div class="service-icon"><i data-feather="smartphone"></i></div>
         <h3>Custom Mobile Apps</h3>
         <p>Native iOS and Android applications built with Swift and React Native. Beautiful, fast, and feature-rich apps tailored to your business needs.</p>
         <ul class="service-features">
@@ -54,7 +55,7 @@
       </div>
 
       <div class="service-card slide-up">
-        <div class="service-icon">💻</div>
+        <div class="service-icon"><i data-feather="monitor"></i></div>
         <h3>Web Applications</h3>
         <p>Modern, responsive web applications that work seamlessly across all devices. Progressive web apps that feel like native mobile experiences.</p>
         <ul class="service-features">
@@ -163,6 +164,9 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Initialize Feather Icons
+    feather.replace();
+  </script>
 </body>
 </html>
-

@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="/crescent.png" sizes="512x512" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
   <!-- Navigation -->
@@ -37,13 +38,45 @@
     <!-- Hero Section -->
     <section class="hero-section fade-in">
       <div class="logo-section">
-        <img src="crescent.png" alt="Crescent Developments Logo" class="company-logo" />
+        <img src="crescent.png" alt="Crescent Developments Logo" class="company-logo" id="heroLogo" />
       </div>
       <h1 class="hero-title">We build custom apps that fit your business in 30 days</h1>
       <p class="hero-subtitle">Premium mobile and web applications for local businesses in the Tri-Cities area</p>
       <div class="hero-cta">
         <a href="discovery.html" class="btn btn-primary">Schedule Discovery Call</a>
         <a href="#services" class="btn btn-secondary">View Services</a>
+      </div>
+    </section>
+
+    <!-- Statistics Section - Vertical Bar -->
+    <section class="stats-section-vertical">
+      <div class="stats-vertical-container">
+        <div class="stats-vertical-bar">
+          <div class="stats-bar-fill" id="statsBarFill"></div>
+        </div>
+        <div class="stats-vertical-items">
+          <div class="stat-milestone" data-position="33">
+            <div class="stat-milestone-dot"></div>
+            <div class="stat-milestone-content">
+              <div class="stat-value"><span data-target="100">0</span>%</div>
+              <div class="stat-desc">On-Time Delivery</div>
+            </div>
+          </div>
+          <div class="stat-milestone" data-position="66">
+            <div class="stat-milestone-dot"></div>
+            <div class="stat-milestone-content">
+              <div class="stat-value"><span data-target="30">0</span> Days</div>
+              <div class="stat-desc">Average Build Time</div>
+            </div>
+          </div>
+          <div class="stat-milestone" data-position="100">
+            <div class="stat-milestone-dot"></div>
+            <div class="stat-milestone-content">
+              <div class="stat-value"><span data-target="5">0</span>★</div>
+              <div class="stat-desc">Client Satisfaction</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -54,7 +87,7 @@
       
       <div class="services-home-grid">
         <div class="service-card slide-up">
-          <div class="service-icon">📱</div>
+          <div class="service-icon"><i data-feather="smartphone"></i></div>
           <h3>Mobile Apps</h3>
           <p>Native iOS and Android applications built with Swift and React Native. Beautiful, fast, and feature-rich apps tailored to your business.</p>
           <ul class="service-features">
@@ -66,7 +99,7 @@
         </div>
 
         <div class="service-card slide-up">
-          <div class="service-icon">💻</div>
+          <div class="service-icon"><i data-feather="monitor"></i></div>
           <h3>Web Applications</h3>
           <p>Modern, responsive web applications that work seamlessly across all devices. Progressive web apps that feel like native experiences.</p>
           <ul class="service-features">
@@ -84,49 +117,62 @@
       <h2 class="section-title">How We Work</h2>
       <p class="section-subtitle">From idea to launch in 30 days</p>
       
-      <div class="process-steps">
-        <div class="process-step-card slide-up">
-          <div class="step-number">1</div>
-          <div class="step-content">
-            <h3>Discovery Call</h3>
-            <p>We start with two consultation meetings to understand your business goals, target audience, and app requirements. We'll discuss features, design preferences, and create a clear project roadmap.</p>
-            <div class="step-duration">Week 1</div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div class="process-steps">
+          <div class="process-step-card slide-up">
+            <div class="step-badge">
+              <span class="step-number">1</span>
+            </div>
+            <div class="step-content">
+              <h3>Discovery Call</h3>
+              <p>We start with two consultation meetings to understand your business goals, target audience, and app requirements. We'll discuss features, design preferences, and create a clear project roadmap.</p>
+              <div class="step-duration">Week 1</div>
+            </div>
           </div>
-        </div>
 
-        <div class="process-step-card slide-up">
-          <div class="step-number">2</div>
-          <div class="step-content">
-            <h3>Design & Prototype</h3>
-            <p>We create interactive prototypes showing the look and feel of your app. You'll see exactly how users will navigate and interact with your application before we write a single line of code.</p>
-            <div class="step-duration">Week 2</div>
+          <div class="process-step-card slide-up">
+            <div class="step-badge">
+              <span class="step-number">2</span>
+            </div>
+            <div class="step-content">
+              <h3>Design & Prototype</h3>
+              <p>We create interactive prototypes showing the look and feel of your app. You'll see exactly how users will navigate and interact with your application before we write a single line of code.</p>
+              <div class="step-duration">Week 2</div>
+            </div>
           </div>
-        </div>
 
-        <div class="process-step-card slide-up">
-          <div class="step-number">3</div>
-          <div class="step-content">
-            <h3>Development</h3>
-            <p>Our team builds your app using modern technologies and best practices. We keep you updated with regular progress reports and demos throughout the development process.</p>
-            <div class="step-duration">Weeks 2-3</div>
+          <div class="process-step-card slide-up">
+            <div class="step-badge">
+              <span class="step-number">3</span>
+            </div>
+            <div class="step-content">
+              <h3>Development</h3>
+              <p>Our team builds your app using modern technologies and best practices. We keep you updated with regular progress reports and demos throughout the development process.</p>
+              <div class="step-duration">Weeks 2-3</div>
+            </div>
           </div>
-        </div>
 
-        <div class="process-step-card slide-up">
-          <div class="step-number">4</div>
-          <div class="step-content">
-            <h3>Launch</h3>
-            <p>We handle the entire deployment process, whether it's submitting to app stores or deploying to web servers. We ensure everything runs smoothly from day one.</p>
-            <div class="step-duration">Week 4</div>
+          <div class="process-step-card slide-up">
+            <div class="step-badge">
+              <span class="step-number">4</span>
+            </div>
+            <div class="step-content">
+              <h3>Launch</h3>
+              <p>We handle the entire deployment process, whether it's submitting to app stores or deploying to web servers. We ensure everything runs smoothly from day one.</p>
+              <div class="step-duration">Week 4</div>
+            </div>
           </div>
-        </div>
 
-        <div class="process-step-card slide-up">
-          <div class="step-number">5</div>
-          <div class="step-content">
-            <h3>Updates & Support</h3>
-            <p>We provide 30 days of post-launch support included. After that, we offer ongoing maintenance, bug fixes, feature updates, and improvements to keep your app performing at its best.</p>
-            <div class="step-duration">Beyond Launch</div>
+          <div class="process-step-card slide-up">
+            <div class="step-badge">
+              <span class="step-number">5</span>
+            </div>
+            <div class="step-content">
+              <h3>Updates & Support</h3>
+              <p>We provide 30 days of post-launch support included. After that, we offer ongoing maintenance, bug fixes, feature updates, and improvements to keep your app performing at its best.</p>
+              <div class="step-duration">Beyond Launch</div>
+            </div>
           </div>
         </div>
       </div>
@@ -178,45 +224,104 @@
       </div>
     </section>
 
+    <!-- Credibility Section -->
+    <section class="credibility-section">
+      <h2 class="section-title">Trusted By</h2>
+      <p class="section-subtitle">Building software solutions for established businesses</p>
+      <div class="client-logo-container">
+        <img src="lifequest-white.jpg" alt="LifeQuest Fitness" class="client-logo" />
+      </div>
+    </section>
+
     <!-- About Section -->
     <section id="about" class="about-home-section">
-      <div class="about-intro slide-up">
-        <h2 class="section-title">About Crescent Developments</h2>
-        <p class="about-text-main">At Crescent Developments, we believe every business deserves access to premium digital solutions. We're dedicated to empowering local businesses in the Tri-Cities area with custom mobile and web applications that drive growth and enhance customer experiences.</p>
-        <p class="about-text-main">We don't believe in cookie-cutter solutions. Every business is unique, and your app should be too. We take the time to understand your specific needs, challenges, and goals to deliver a solution that truly fits your business.</p>
+      <div class="about-intro-redesign slide-up">
+        <h2 class="section-title">About Us</h2>
+        <p class="about-text-large">We build premium mobile and web applications for businesses in the Tri-Cities area. No templates. No shortcuts. Just custom solutions that work.</p>
       </div>
 
-      <h3 class="subsection-title">Why Choose Us</h3>
-      <div class="benefits-grid">
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">⚡</div>
-          <h4>Fast Delivery</h4>
-          <p>We deliver production-ready apps in less than 30 days. Your business can't wait months for digital solutions, and neither should you.</p>
+      <div class="founder-intro-redesign slide-up">
+        <div class="founder-content-simple">
+          <h3 class="founder-name-large">Cooper Cazier</h3>
+          <p class="founder-title-large">Founder & Developer</p>
+          <p class="founder-bio-large">Specializing in Swift and React Native with a track record of delivering production-ready apps in 30 days. Every project gets meticulous attention to detail.</p>
         </div>
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">💎</div>
-          <h4>Premium Quality</h4>
-          <p>We use modern technologies and best practices to build apps that are fast, reliable, and beautiful. Quality is never compromised.</p>
+      </div>
+
+      <h3 class="subsection-title-redesign">Why Work With Us</h3>
+      <div class="benefits-grid-redesign">
+        <div class="benefit-item-redesign slide-up">
+          <div class="benefit-number">30</div>
+          <div class="benefit-label">Day Delivery</div>
         </div>
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">🎯</div>
-          <h4>Custom Solutions</h4>
-          <p>No templates, no shortcuts. Every app is built from scratch to match your exact requirements and brand identity.</p>
+        <div class="benefit-item-redesign slide-up">
+          <div class="benefit-number">100%</div>
+          <div class="benefit-label">Custom Built</div>
         </div>
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">🤝</div>
-          <h4>Local Partnership</h4>
-          <p>Based in Pasco, Washington, we understand the Tri-Cities market. We're invested in your success and the growth of our local community.</p>
+        <div class="benefit-item-redesign slide-up">
+          <div class="benefit-number">24/7</div>
+          <div class="benefit-label">Support</div>
         </div>
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">🔧</div>
-          <h4>Ongoing Support</h4>
-          <p>We don't disappear after launch. We provide continued support, updates, and improvements to keep your app performing at its best.</p>
+        <div class="benefit-item-redesign slide-up">
+          <div class="benefit-number">∞</div>
+          <div class="benefit-label">Updates</div>
         </div>
-        <div class="benefit-card slide-up">
-          <div class="benefit-icon">📊</div>
-          <h4>Transparent Process</h4>
-          <p>You'll be involved every step of the way with regular updates, demos, and clear communication throughout the development process.</p>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      <p class="section-subtitle">Everything you need to know about working with us</p>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How much does an app cost?</span>
+            <i data-feather="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Pricing is project-based. Schedule a free discovery call to discuss your specific needs and get a detailed quote.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What is your typical project timeline?</span>
+            <i data-feather="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>30 days or less from start to launch, including discovery, design, development, and deployment.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Do you work with businesses outside the Tri-Cities?</span>
+            <i data-feather="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! We work with businesses nationwide through video calls and online collaboration tools.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What's included in the 30-day timeline?</span>
+            <i data-feather="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>Discovery meetings, design prototypes, full development, testing, deployment, and 30 days of post-launch support.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>What happens after the app launches?</span>
+            <i data-feather="chevron-down" class="faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            <p>30 days of free support included. After that, optional maintenance plans are available for ongoing updates and improvements.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -265,5 +370,9 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Initialize Feather Icons
+    feather.replace();
+  </script>
 </body>
 </html>
